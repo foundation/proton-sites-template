@@ -23,6 +23,21 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@types/node@16.10.4":
+  version "16.10.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.10.4.tgz#592f12b0b5f357533ddc3310b0176d42ea3e45d1"
+  integrity sha512-EITwVTX5B4nDjXjGeQAfXOrm+Jn+qNjDmyDRtWoD+wZsl/RDPRTFRKivs4Mt74iOFlLOrE5+Kf+p5yjyhm3+cA==
+
+"@types/node@^15.9.0":
+  version "15.14.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.14.9.tgz#bc43c990c3c9be7281868bbc7b8fdd6e2b57adfa"
+  integrity sha512-qjd88DrCxupx/kJD5yQgZdcYKZKSIGBVDIBE1/LTGcNm3d2Np/jxojkdePDdfnBHJc5W7vSMpbJ1aB7p/Py69A==
+
+"@types/resolve@1.20.1":
+  version "1.20.1"
+  resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.20.1.tgz#3727e48042fda81e374f5d5cf2fa92288bf698f8"
+  integrity sha512-Ku5+GPFa12S3W26Uwtw+xyrtIpaZsGYHH6zxNbZlstmlvMYSZRzOwzwsXbxlVUbHyUucctSyuFtu6bNxwYomIw==
+
 ansi-styles@^4.1.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-4.3.0.tgz#edd803628ae71c04c85ae7a0906edad34b648937"
@@ -43,10 +58,23 @@ array-union@^2.1.0:
   resolved "https://registry.yarnpkg.com/array-union/-/array-union-2.1.0.tgz#b798420adbeb1de828d84acd8a2e23d3efe85e8d"
   integrity sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==
 
+balanced-match@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
+  integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
+
 binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
+
+brace-expansion@^1.1.7:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
+  integrity sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
+  dependencies:
+    balanced-match "^1.0.0"
+    concat-map "0.0.1"
 
 braces@^3.0.1, braces@~3.0.2:
   version "3.0.2"
@@ -89,6 +117,18 @@ color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+concat-map@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
+  integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+
+crosspath@0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/crosspath/-/crosspath-0.0.9.tgz#2ac42b39b3b83eeb25851a4058ccd0722baea520"
+  integrity sha512-lhDiWhqHk1IQ0BiGN9/Ji7qEr9LwCG8taDCTgihII/6b91my+GvTNXDB7eKh/FySz488tkt2IboqBJTSZtc4Fw==
+  dependencies:
+    "@types/node" "^15.9.0"
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -387,6 +427,13 @@ micromatch@^4.0.4:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
+minimatch@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
+  integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
+  dependencies:
+    brace-expansion "^1.1.7"
+
 motion-ui@latest:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/motion-ui/-/motion-ui-2.0.3.tgz#3a87f8fea4512d654c0822a0b346f23dadf0d0b7"
@@ -443,6 +490,17 @@ run-parallel@^1.1.9:
   integrity sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==
   dependencies:
     queue-microtask "^1.2.2"
+
+sass-extended-importer@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/sass-extended-importer/-/sass-extended-importer-0.4.2.tgz#58f86b8118d0739ba6e60797fa4f2744b6e0b3ee"
+  integrity sha512-3e9+iVB1vvoGS6ohq7OG2MiYvcwESkZqwV8g0uCDGvHeTt4kEt0E/T8eav18J03fvNFK1/mV47592E1tx1izgQ==
+  dependencies:
+    "@types/node" "16.10.4"
+    "@types/resolve" "1.20.1"
+    crosspath "0.0.9"
+    minimatch "3.0.4"
+    resolve "^1.20.0"
 
 sass@^1.45.0:
   version "1.45.0"

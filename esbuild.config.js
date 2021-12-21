@@ -1,7 +1,8 @@
 const esbuild = require('esbuild');
-const glob = require("tiny-glob");
-const copy = require('esbuild-plugin-copy');
-const { sassPlugin } = require("esbuild-sass-plugin");
+const glob    = require("tiny-glob");
+const copy    = require('esbuild-plugin-copy');
+const { sassPlugin }   = require("esbuild-sass-plugin");
+const {createImporter} = require("sass-extended-importer");
 
 (async () => {
 
@@ -15,10 +16,13 @@ const { sassPlugin } = require("esbuild-sass-plugin");
         external    : ["jquery", "what-input"],
         plugins     : [
             // Sass includes
-            sassPlugin({includePaths: [
-                "node_modules/foundation-sites/scss/",
-                "node_modules/motion-ui/src/",
-            ]}),
+            sassPlugin({
+                includePaths: [
+                    "node_modules/foundation-sites/scss/",
+                    "node_modules/motion-ui/src/",
+                ],
+                importer: createImporter(),
+            }),
             // Copy in the static external libraries
             copy.default({assets: {
                 from: [
