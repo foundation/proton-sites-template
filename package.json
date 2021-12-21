@@ -1,0 +1,24 @@
+{
+  "name": "proton-sites-template",
+  "version": "1.0.0",
+  "description": "Foundation for Sites template for Proton",
+  "repository": "https://github.com/foundation/proton-sites-template",
+  "author": "Joe Workman",
+  "license": "MIT",
+  "dependencies": {
+    "foundation-sites": "latest",
+    "jquery": "^3.6.0",
+    "motion-ui": "latest",
+    "what-input": "^5.2.10"
+  },
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "build:proton": "proton build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.6",
+    "esbuild-plugin-copy": "^0.3.0",
+    "esbuild-sass-plugin": "^1.8.2",
+    "tiny-glob": "^0.2.9"
+  }
+}
