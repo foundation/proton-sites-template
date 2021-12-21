@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 @import 'settings';
-// @import 'motion-ui';
+@import 'motion-ui';
 @import 'foundation';
 
 // Global styles
@@ -61,5 +61,5 @@
 // @include foundation-prototype-classes;
 
 // Motion UI
-// @include motion-ui-transitions;
-// @include motion-ui-animations;
+@include motion-ui-transitions;
+@include motion-ui-animations;
