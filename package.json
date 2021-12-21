@@ -12,14 +12,14 @@
     "what-input": "^5.2.10"
   },
   "scripts": {
-    "build": "proton build && node esbuild.config.js",
+    "build": "node esbuild.config.js",
     "build:proton": "proton build"
   },
   "devDependencies": {
     "esbuild": "^0.14.6",
     "esbuild-plugin-copy": "^0.3.0",
+    "esbuild-plugin-glob": "^1.0.3",
     "esbuild-sass-plugin": "^1.8.2",
-    "sass-extended-importer": "^0.4.2",
-    "tiny-glob": "^0.2.9"
+    "sass-extended-importer": "^0.4.2"
   }
 }
