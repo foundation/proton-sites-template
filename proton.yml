@@ -2,8 +2,10 @@ defaultExt: html
 domain: 'https://www.example.com'
 autoindex: true
 debug: false
-pretty: true
+devserver: browsersync
 minify: false
+npmBuild: yarn build
+pretty: true
 sitemap: true
 layouts:
     default: default.html
@@ -16,3 +18,4 @@ paths:
     macros: src/macros
     pages: src/pages
     partials: src/partials
+    watch: src

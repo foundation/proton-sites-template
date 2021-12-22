@@ -12,10 +12,11 @@
     "what-input": "^5.2.10"
   },
   "scripts": {
-    "build": "node esbuild.config.js",
-    "build:proton": "proton build"
+    "build": "node esbuild.config.js"
   },
   "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "chokidar": "^3.5.2",
     "esbuild": "^0.14.6",
     "esbuild-plugin-copy": "^0.3.0",
     "esbuild-plugin-glob": "^1.0.3",

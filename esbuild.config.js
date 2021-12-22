@@ -1,10 +1,8 @@
 const copy               = require('esbuild-plugin-copy');
-// const esBuildDevServer   = require("esbuild-dev-server")
 const esbuild            = require('esbuild');
 const { globPlugin }     = require('esbuild-plugin-glob');
 const { sassPlugin }     = require("esbuild-sass-plugin");
 const { createImporter } = require("sass-extended-importer");
-// const { exec }           = require('child_process');
 
 esbuild.build({
     entryPoints : [
@@ -38,11 +36,3 @@ esbuild.build({
         }})
     ],
 });
-
-// esBuildDevServer.start(, {
-//     port            : "8080",
-//     watchDir        : "src",
-//     index           : "dist/index.html",
-//     staticDir       : "dist",
-//     onBeforeRebuild : () => console.log("onBeforeRebuild"),
-// });
